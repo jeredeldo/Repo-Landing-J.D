@@ -10,9 +10,9 @@ export const personalData: PersonalInfo = {
     "Apasionado por las buenas prácticas de código, el diseño minimalista estilo SaaS, la optimización del rendimiento (SEO/Web Vitals) y la mejora continua en cada línea de código."
   ],
   location: "Argentina",
-  email: "jeremiasdeldo@email.com", // Cambiar por tu email real
+  email: "jeremias.deldo@gmail.com",
   linkedin: "https://www.linkedin.com/in/jerem%C3%ADas-del-do-92277a38a/",
-  github: "https://github.com/jeremiasdeldo", // Cambiar si tienes usuario diferente
+  github: "https://github.com/jeredeldo",
   availableForWork: true,
   avatarUrl: "/avatar-placeholder.png",
   resumeUrl: "#"
@@ -91,7 +91,7 @@ export const projectsData: Project[] = [
     image: "/projects/nexus-ai.webp",
     tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "OpenAI API", "Prisma"],
     category: "AI / Innovation",
-    githubUrl: "https://github.com/jeremiasdeldo/nexus-ai",
+    githubUrl: "https://github.com/jeredeldo/nexus-ai",
     demoUrl: "https://nexus-ai-demo.vercel.app",
     featured: true
   },
@@ -103,7 +103,7 @@ export const projectsData: Project[] = [
     image: "/projects/ecopulse.webp",
     tags: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Node.js"],
     category: "Full Stack",
-    githubUrl: "https://github.com/jeremiasdeldo/ecopulse-dashboard",
+    githubUrl: "https://github.com/jeredeldo/ecopulse-dashboard",
     demoUrl: "https://ecopulse-demo.vercel.app",
     featured: true
   },
@@ -115,7 +115,7 @@ export const projectsData: Project[] = [
     image: "/projects/aura-commerce.webp",
     tags: ["Next.js 15", "Tailwind CSS", "Stripe", "Zustand", "Framer Motion"],
     category: "Frontend",
-    githubUrl: "https://github.com/jeremiasdeldo/aura-commerce",
+    githubUrl: "https://github.com/jeredeldo/aura-commerce",
     demoUrl: "https://aura-commerce.vercel.app",
     featured: true
   },
@@ -127,7 +127,7 @@ export const projectsData: Project[] = [
     image: "/projects/flowcraft.webp",
     tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Jest"],
     category: "Backend",
-    githubUrl: "https://github.com/jeremiasdeldo/flowcraft-api",
+    githubUrl: "https://github.com/jeredeldo/flowcraft-api",
     demoUrl: "https://flowcraft-api.vercel.app",
     featured: true
   }
@@ -141,12 +141,12 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "GitHub",
-    url: "https://github.com/jeremiasdeldo",
+    url: "https://github.com/jeredeldo",
     iconName: "Github"
   },
   {
     name: "Email",
-    url: "mailto:jeremiasdeldo@email.com",
+    url: "mailto:jeremias.deldo@gmail.com",
     iconName: "Mail"
   }
 ];

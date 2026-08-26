@@ -34,7 +34,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'glass-nav py-3.5 shadow-lg shadow-black/5'
+          ? 'glass-nav py-3.5 shadow-sm'
           : 'bg-transparent py-5'
       }`}
     >
@@ -50,17 +50,17 @@ export function Navbar() {
             </div>
             <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white flex items-center">
               Jeremías
-              <span className="text-blue-500 dark:text-blue-400 ml-1">.dev</span>
+              <span className="text-blue-600 dark:text-blue-400 ml-1">.dev</span>
             </span>
           </a>
 
           {/* Links Desktop */}
-          <nav className="hidden md:flex items-center gap-1 rounded-full bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-100/90 border border-slate-800/80 light:border-slate-300 px-4 py-1.5 backdrop-blur-md">
+          <nav className="hidden md:flex items-center gap-1 rounded-full bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800/80 px-4 py-1.5 backdrop-blur-md shadow-sm">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3.5 py-1.5 text-sm font-medium text-slate-400 dark:text-slate-400 hover:text-white dark:hover:text-white light:text-slate-600 light:hover:text-slate-900 rounded-full transition-colors relative hover:bg-slate-800/50 light:hover:bg-slate-200/60"
+                className="px-3.5 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white rounded-full transition-colors relative hover:bg-slate-100 dark:hover:bg-slate-800/50"
               >
                 {link.name}
               </a>
@@ -75,7 +75,7 @@ export function Navbar() {
               href={personalData.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/25 hover:shadow-blue-600/40 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/20 hover:shadow-blue-600/35 hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>LinkedIn</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -87,7 +87,7 @@ export function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl bg-slate-900/60 dark:bg-slate-900/60 border border-slate-800 text-slate-300 hover:text-white transition-colors"
+              className="p-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white transition-colors"
               aria-label="Abrir menú"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -103,7 +103,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-nav border-b border-slate-800/80 px-4 pt-3 pb-6 mt-3"
+            className="md:hidden glass-nav border-b border-slate-200 dark:border-slate-800 px-4 pt-3 pb-6 mt-3 shadow-lg"
           >
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
@@ -111,12 +111,12 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2.5 text-base font-medium text-slate-300 dark:text-slate-300 hover:text-blue-400 hover:bg-slate-800/40 rounded-lg transition-colors"
+                  className="px-4 py-2.5 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/40 rounded-lg transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="pt-2 border-t border-slate-800/60 mt-2 flex flex-col gap-2">
+              <div className="pt-2 border-t border-slate-200 dark:border-slate-800/60 mt-2 flex flex-col gap-2">
                 <a
                   href={personalData.linkedin}
                   target="_blank"

@@ -17,11 +17,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="glass-card rounded-2xl border border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:border-blue-500/40 transition-all duration-300 shadow-xl"
+      className="glass-card rounded-2xl border border-slate-200 dark:border-slate-800/80 overflow-hidden flex flex-col justify-between group hover:border-blue-500/50 transition-all duration-300 shadow-md"
     >
       <div>
         {/* Visual Mockup Placeholder elegante */}
-        <div className="relative w-full h-52 bg-slate-950 p-4 border-b border-slate-800/80 overflow-hidden group-hover:bg-slate-900/90 transition-colors">
+        <div className="relative w-full h-52 bg-slate-950 p-4 border-b border-slate-200 dark:border-slate-800/80 overflow-hidden group-hover:bg-slate-900/90 transition-colors">
           {/* Fondo gradiente decorativo */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-blue-600/30 to-violet-600/30 blur-2xl rounded-full pointer-events-none" />
           
@@ -64,11 +64,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Info del Proyecto */}
         <div className="p-6">
           <div className="flex items-center justify-between mb-2">
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-400 transition-colors">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               {project.title}
             </h3>
             {project.featured && (
-              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950/60 text-amber-400 border border-amber-800/50 flex items-center gap-1">
+              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-400 border border-amber-300 dark:border-amber-800/50 flex items-center gap-1">
                 <Sparkles className="w-3 h-3" />
                 Destacado
               </span>
@@ -84,7 +84,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900/80 text-slate-300 border border-slate-800/80"
+                className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800/80"
               >
                 {tag}
               </span>
@@ -94,12 +94,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       {/* Footer con Enlaces */}
-      <div className="px-6 pb-6 pt-2 flex items-center gap-3 border-t border-slate-800/40 mt-2">
+      <div className="px-6 pb-6 pt-2 flex items-center gap-3 border-t border-slate-200 dark:border-slate-800/40 mt-2">
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white text-xs font-semibold transition-colors"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-900/80 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-xs font-semibold transition-colors"
         >
           <GithubIcon className="w-4 h-4" />
           <span>Código</span>

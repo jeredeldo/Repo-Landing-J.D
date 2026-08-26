@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FolderGit2, Sparkles, Code } from 'lucide-react';
-import { projectsData } from '@/data/portfolioData';
+import { FolderGit2, Code } from 'lucide-react';
+import { projectsData, personalData } from '@/data/portfolioData';
 import { ProjectCard } from './ProjectCard';
 
 const categories = ['Todos', 'Full Stack', 'Frontend', 'Backend', 'AI / Innovation'];
@@ -26,12 +26,12 @@ export function Projects() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/50 text-blue-700 dark:text-blue-400 text-xs font-semibold uppercase tracking-wider">
             <FolderGit2 className="w-3.5 h-3.5" />
             <span>Portafolio</span>
           </div>
           <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Proyectos <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Destacados</span>
+            Proyectos <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">Destacados</span>
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-xl text-base">
             Una selección de aplicaciones web que representan mi enfoque en código limpio, experiencia de usuario e innovación tecnológica.
@@ -46,7 +46,7 @@ export function Projects() {
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                   selectedCategory === cat
                     ? 'bg-gradient-to-r from-blue-600 to-violet-600 text-white shadow-md'
-                    : 'glass-card text-slate-400 hover:text-white hover:border-slate-700'
+                    : 'glass-card text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border-slate-200 dark:border-slate-800'
                 }`}
               >
                 {cat}
@@ -67,12 +67,12 @@ export function Projects() {
         {/* Callout GitHub */}
         <div className="mt-16 flex justify-center">
           <a
-            href="https://github.com/jeremiasdeldo"
+            href={personalData.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl glass-card text-slate-300 hover:text-white hover:border-blue-500/40 text-sm font-semibold transition-all group shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl glass-card text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white border-slate-200 dark:border-slate-800 text-sm font-semibold transition-all group shadow-sm"
           >
-            <Code className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" />
+            <Code className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
             <span>Ver más repositorios en GitHub</span>
           </a>
         </div>
