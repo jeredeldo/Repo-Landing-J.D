@@ -36,19 +36,19 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative bg-slate-100/40 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-800/40">
+    <section id="contact" className="py-24 relative bg-slate-950/60 border-t border-slate-800/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/50 text-emerald-700 dark:text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/50 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
             <MessageSquare className="w-3.5 h-3.5" />
             <span>Contacto</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            ¿Tenés una idea o proyecto en mente? <span className="bg-gradient-to-r from-emerald-600 to-cyan-600 dark:from-emerald-400 dark:to-cyan-400 bg-clip-text text-transparent">Hablemos</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            ¿Tenés una idea o proyecto en mente? <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Hablemos</span>
           </h2>
-          <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-xl text-base">
+          <p className="mt-3 text-slate-400 max-w-xl text-base">
             Estoy disponible para oportunidades freelance, contratación a tiempo completo o colaboraciones innovadoras.
           </p>
         </div>
@@ -63,8 +63,8 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="glass-card p-8 rounded-3xl border border-slate-200 dark:border-slate-800/80 space-y-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white">Canales Directos</h3>
+            <div className="glass-card p-8 rounded-3xl border border-slate-800/80 space-y-6">
+              <h3 className="text-xl font-bold text-white">Canales Directos</h3>
               
               <div className="space-y-4">
                 {/* LinkedIn */}
@@ -72,31 +72,31 @@ export function Contact() {
                   href={personalData.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
                     <LinkedinIcon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">LinkedIn Perfil</span>
-                    <span className="text-sm font-semibold text-slate-900 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <span className="text-xs text-slate-400 block font-medium">LinkedIn Perfil</span>
+                    <span className="text-sm font-semibold text-slate-200 group-hover:text-blue-400 transition-colors">
                       Jeremías Del Do
                     </span>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-blue-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
 
                 {/* Email */}
                 <a
                   href={`mailto:${personalData.email}`}
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-600/20 flex items-center justify-center text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-600/20 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">Email Directo</span>
-                    <span className="text-sm font-semibold text-slate-900 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                    <span className="text-xs text-slate-400 block font-medium">Email Directo</span>
+                    <span className="text-sm font-semibold text-slate-200 group-hover:text-indigo-400 transition-colors">
                       {personalData.email}
                     </span>
                   </div>
@@ -107,28 +107,28 @@ export function Contact() {
                   href={personalData.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 flex items-center justify-center text-slate-800 dark:text-slate-200 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-200 group-hover:scale-110 transition-transform">
                     <GithubIcon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">GitHub Repositorios</span>
-                    <span className="text-sm font-semibold text-slate-900 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-white transition-colors">
+                    <span className="text-xs text-slate-400 block font-medium">GitHub Repositorios</span>
+                    <span className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors">
                       @jeredeldo
                     </span>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
 
                 {/* Ubicación */}
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-600/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-600/20 flex items-center justify-center text-emerald-400">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">Ubicación</span>
-                    <span className="text-sm font-semibold text-slate-900 dark:text-slate-200">
+                    <span className="text-xs text-slate-400 block font-medium">Ubicación</span>
+                    <span className="text-sm font-semibold text-slate-200">
                       {personalData.location} (Remoto / Presencial)
                     </span>
                   </div>
@@ -145,14 +145,14 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="glass-card p-8 rounded-3xl border border-slate-200 dark:border-slate-800/80 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Enviame un mensaje</h3>
+            <div className="glass-card p-8 rounded-3xl border border-slate-800/80">
+              <h3 className="text-xl font-bold text-white mb-6">Enviame un mensaje</h3>
 
               {submitted ? (
-                <div className="p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 text-center space-y-3">
-                  <CheckCircle2 className="w-12 h-12 text-emerald-600 dark:text-emerald-400 mx-auto animate-bounce" />
-                  <h4 className="text-lg font-bold text-slate-900 dark:text-white">¡Mensaje enviado con éxito!</h4>
-                  <p className="text-sm text-slate-700 dark:text-slate-300">
+                <div className="p-6 rounded-2xl bg-emerald-950/60 border border-emerald-800/80 text-center space-y-3">
+                  <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto animate-bounce" />
+                  <h4 className="text-lg font-bold text-white">¡Mensaje enviado con éxito!</h4>
+                  <p className="text-sm text-slate-300">
                     Gracias por ponerte en contacto. Te responderé a la brevedad a <span className="font-semibold">{personalData.email}</span>.
                   </p>
                 </div>
@@ -160,7 +160,7 @@ export function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
                         Tu Nombre
                       </label>
                       <input
@@ -169,12 +169,12 @@ export function Contact() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Ej: Sofía Martínez"
-                        className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all shadow-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
                         Tu Email
                       </label>
                       <input
@@ -183,13 +183,13 @@ export function Contact() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="ejemplo@correo.com"
-                        className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all shadow-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
                       Asunto
                     </label>
                     <input
@@ -197,12 +197,12 @@ export function Contact() {
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       placeholder="Propuesta de proyecto / Consulta"
-                      className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all shadow-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
                       Mensaje
                     </label>
                     <textarea
@@ -211,7 +211,7 @@ export function Contact() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Hola Jeremías, me gustaría hablar sobre..."
-                      className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all resize-none shadow-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all resize-none"
                     />
                   </div>
 
