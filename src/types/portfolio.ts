@@ -7,9 +7,19 @@ export interface PersonalInfo {
   email: string;
   linkedin: string;
   github: string;
+  whatsapp?: string;
   availableForWork: boolean;
   avatarUrl: string;
   resumeUrl?: string;
+}
+
+export interface Service {
+  id: string;
+  title: string;
+  description: string;
+  iconName: string;
+  features: string[];
+  popular?: boolean;
 }
 
 export interface SkillCategory {
@@ -36,6 +46,7 @@ export interface Project {
   githubUrl: string;
   demoUrl: string;
   featured: boolean;
+  clientBadge?: string;
 }
 
 export interface Stat {

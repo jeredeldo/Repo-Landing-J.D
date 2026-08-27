@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { UserCheck, Award, Code, Sparkles, ShieldCheck, Zap, Laptop } from 'lucide-react';
+import { UserCheck, Award, Sparkles, ShieldCheck, Zap, Laptop, Clock, ThumbsUp } from 'lucide-react';
 import { personalData, statsData } from '@/data/portfolioData';
 
 export function About() {
@@ -16,17 +16,17 @@ export function About() {
             <span>Sobre Mí</span>
           </div>
           <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Apasionado por la tecnología y la <span className="bg-gradient-to-r from-blue-400 to-violet-500 bg-clip-text text-transparent">excelencia en código</span>
+            Compromiso, diseño moderno y <span className="bg-gradient-to-r from-blue-400 to-violet-500 bg-clip-text text-transparent">resultados reales</span>
           </h2>
           <p className="mt-3 text-slate-400 max-w-2xl text-base sm:text-lg">
-            Combinando diseño intuitivo con arquitecturas backend eficientes para crear productos web extraordinarios.
+            Desarrollo soluciones digitales a medida pensadas para fortalecer la presencia online de tu negocio.
           </p>
         </div>
 
         {/* Contenido Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Bio detallada */}
+          {/* Bio orientada a negocios */}
           <motion.div
             className="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed text-base sm:text-lg"
             initial={{ opacity: 0, x: -30 }}
@@ -43,18 +43,18 @@ export function About() {
             {/* Principios clave */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-                <ShieldCheck className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                <Clock className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-slate-200 text-sm">Código Mantenible</h4>
-                  <p className="text-xs text-slate-400 mt-1">Estructuras TypeScript limpias y escalables a largo plazo.</p>
+                  <h4 className="font-semibold text-slate-200 text-sm">Entregas en Fecha</h4>
+                  <p className="text-xs text-slate-400 mt-1">Cumplimiento estricto de plazos acordados sin sorpresas.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-                <Zap className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-slate-200 text-sm">Rendimiento Máximo</h4>
-                  <p className="text-xs text-slate-400 mt-1">Optimización de carga, SEO y métricas Web Vitals.</p>
+                  <h4 className="font-semibold text-slate-200 text-sm">Código & Diseño Limpio</h4>
+                  <p className="text-xs text-slate-400 mt-1">Páginas seguras, fáciles de administrar y mantener.</p>
                 </div>
               </div>
             </div>
@@ -75,9 +75,9 @@ export function About() {
               >
                 <div>
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                    {idx === 0 && <Award className="w-5 h-5" />}
-                    {idx === 1 && <Laptop className="w-5 h-5" />}
-                    {idx === 2 && <Code className="w-5 h-5" />}
+                    {idx === 0 && <ThumbsUp className="w-5 h-5" />}
+                    {idx === 1 && <Clock className="w-5 h-5" />}
+                    {idx === 2 && <Zap className="w-5 h-5" />}
                     {idx === 3 && <Sparkles className="w-5 h-5" />}
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">

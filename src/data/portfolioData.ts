@@ -1,13 +1,13 @@
-import { PersonalInfo, SkillCategory, Project, Stat, SocialLink } from '@/types/portfolio';
+import { PersonalInfo, Service, SkillCategory, Project, Stat, SocialLink } from '@/types/portfolio';
 
 export const personalData: PersonalInfo = {
   name: "Jeremías Del Do",
-  role: "Full Stack Developer",
-  shortBio: "Desarrollador Full Stack apasionado por construir productos web modernos, de alto rendimiento y con un diseño impecable.",
+  role: "Desarrollador & Diseñador Web Freelance",
+  shortBio: "Diseño y desarrollo sitios web profesionales, rápidos y atractivos pensados para hacer crecer tu marca y captar más clientes.",
   fullBio: [
-    "Hola, soy Jeremías. Desarrollador Web Full Stack enfocado en crear soluciones tecnológicas eficientes, elegantes y orientadas a resultados.",
-    "Me especializo en el ecosistema de JavaScript y TypeScript (React, Next.js, Node.js), diseñando e implementando desde interfaces de usuario altamente interactivas hasta arquitecturas backend escalables y APIs robustas.",
-    "Apasionado por las buenas prácticas de código, el diseño minimalista estilo SaaS, la optimización del rendimiento (SEO/Web Vitals) y la mejora continua en cada línea de código."
+    "Hola, soy Jeremías. Me dedico a crear páginas web de alto nivel para empresas, profesionales independientes y proyectos que buscan transmitir confianza y autoridad.",
+    "Mi objetivo es convertir la presencia digital de mis clientes en su mejor herramienta de ventas: sitios web modernos, rápidos en celulares y computadoras, con diseño impecable y fácil navegación.",
+    "Acompaño cada proyecto desde la idea inicial hasta el lanzamiento, asegurando comunicación fluida, entregas en tiempo y forma, y un resultado final del que te sientas orgulloso."
   ],
   location: "Argentina",
   email: "jeremias.deldo@gmail.com",
@@ -18,118 +18,140 @@ export const personalData: PersonalInfo = {
   resumeUrl: "#"
 };
 
+export const servicesData: Service[] = [
+  {
+    id: "landing-pages",
+    title: "Landing Pages de Alta Conversión",
+    description: "Páginas clave diseñadas para promocionar un servicio o producto específico, captar clientes potenciales y maximizar el retorno de tu publicidad.",
+    iconName: "Rocket",
+    features: ["Diseño exclusivo enfocado en ventas", "Carga ultra rápida en móviles", "Integración con WhatsApp y formularios", "Optimizadas para Google Ads y redes"],
+    popular: true
+  },
+  {
+    id: "sitios-corporativos",
+    title: "Sitios Web Corporativos",
+    description: "La carta de presentación digital ideal para tu empresa o consultoría. Transmití profesionalismo, confianza y autoridad ante tus clientes.",
+    iconName: "Building2",
+    features: ["Secciones de servicios e historia", "Diseño responsive (adaptable a todo dispositivo)", "Posicionamiento SEO inicial", "Dominio y correo profesional"],
+  },
+  {
+    id: "e-commerce",
+    title: "Tiendas Online (E-Commerce)",
+    description: "Vendé tus productos las 24 horas del día con una tienda virtual rápida, segura y fácil de administrar.",
+    iconName: "ShoppingBag",
+    features: ["Catálogo dinámico de productos", "Pasarela de pagos (MercadoPago / Stripe)", "Carrito de compras en tiempo real", "Panel de gestión de stock sencillo"],
+  },
+  {
+    id: "optimizacion-seo",
+    title: "Rediseño & Optimización Web",
+    description: "Transformá un sitio antiguo o lento en una experiencia moderna, rápida y adaptable que destaque frente a tu competencia.",
+    iconName: "Zap",
+    features: ["Aceleración de tiempo de carga", "Rediseño visual moderno y limpio", "Corrección de errores y usabilidad", "Adaptación 100% móvil"],
+  }
+];
+
 export const statsData: Stat[] = [
   {
-    label: "Experiencia",
-    value: "+3 Años",
-    description: "Creando software web moderno"
-  },
-  {
-    label: "Proyectos",
-    value: "+15",
-    description: "Completados con éxito"
-  },
-  {
-    label: "Código Limpio",
-    value: "100%",
-    description: "TypeScript & Best Practices"
-  },
-  {
     label: "Satisfacción",
-    value: "5/5",
-    description: "Compromiso y puntualidad"
+    value: "100%",
+    description: "Clientes satisfechos con el resultado"
+  },
+  {
+    label: "Entregas a Tiempo",
+    value: "Puntual",
+    description: "Compromiso estricto con plazos"
+  },
+  {
+    label: "Velocidad de Carga",
+    value: "< 1 seg",
+    description: "Páginas optimizadas al máximo"
+  },
+  {
+    label: "Soporte Continuo",
+    value: "24/7",
+    description: "Acompañamiento post-lanzamiento"
   }
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
-    id: "frontend",
-    name: "Frontend",
+    id: "design-dev",
+    name: "Diseño & Desarrollo Web",
     skills: [
-      { name: "React", iconName: "Atom", level: "Avanzado", featured: true },
-      { name: "Next.js 15", iconName: "Zap", level: "Avanzado", featured: true },
-      { name: "TypeScript", iconName: "Code2", level: "Avanzado", featured: true },
-      { name: "Tailwind CSS", iconName: "Palette", level: "Avanzado", featured: true },
-      { name: "Framer Motion", iconName: "Sparkles", level: "Intermedio-Avanzado", featured: true },
-      { name: "HTML5 / CSS3", iconName: "Layout", level: "Avanzado" },
-      { name: "Redux / Zustand", iconName: "Layers", level: "Intermedio" }
+      { name: "React / Next.js", iconName: "Zap", level: "Profesional", featured: true },
+      { name: "HTML5 / CSS3", iconName: "Layout", level: "Profesional", featured: true },
+      { name: "Tailwind CSS", iconName: "Palette", level: "Profesional", featured: true },
+      { name: "TypeScript", iconName: "Code2", level: "Profesional", featured: true },
+      { name: "Diseño UX/UI", iconName: "Figma", level: "Avanzado", featured: true },
+      { name: "Optimización SEO", iconName: "Globe", level: "Avanzado", featured: true },
     ]
   },
   {
-    id: "backend",
-    name: "Backend",
+    id: "integrations",
+    name: "Integraciones & Herramientas",
     skills: [
-      { name: "Node.js", iconName: "Server", level: "Avanzado", featured: true },
-      { name: "Express.js", iconName: "Cpu", level: "Avanzado", featured: true },
-      { name: "NestJS", iconName: "ShieldCheck", level: "Intermedio" },
-      { name: "REST APIs", iconName: "Globe", level: "Avanzado", featured: true },
-      { name: "PostgreSQL", iconName: "Database", level: "Intermedio-Avanzado", featured: true },
-      { name: "MongoDB", iconName: "HardDrive", level: "Intermedio" },
-      { name: "Prisma / Drizzle", iconName: "Workflow", level: "Intermedio-Avanzado" }
-    ]
-  },
-  {
-    id: "tools",
-    name: "Herramientas & DevOps",
-    skills: [
-      { name: "Git & GitHub", iconName: "GitBranch", level: "Avanzado", featured: true },
-      { name: "Vercel / Netlify", iconName: "Cloud", level: "Avanzado", featured: true },
-      { name: "Docker", iconName: "Box", level: "Intermedio" },
-      { name: "Postman", iconName: "Send", level: "Avanzado" },
-      { name: "Figma (UI/UX)", iconName: "Figma", level: "Intermedio" },
-      { name: "CI / CD", iconName: "Repeat", level: "Intermedio" }
+      { name: "WordPress / Headless", iconName: "Layers", level: "Avanzado", featured: true },
+      { name: "Node.js & APIs", iconName: "Server", level: "Avanzado", featured: true },
+      { name: "Bases de Datos", iconName: "Database", level: "Avanzado" },
+      { name: "MercadoPago / Stripe", iconName: "ShieldCheck", level: "Avanzado", featured: true },
+      { name: "Vercel / Hosting", iconName: "Cloud", level: "Profesional", featured: true },
+      { name: "Git & Control de Versiones", iconName: "GitBranch", level: "Profesional" }
     ]
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    id: "nexus-ai",
-    title: "Nexus AI Platform",
-    description: "Plataforma SaaS moderna de inteligencia artificial para generación de contenido y análisis predictivo en tiempo real.",
-    longDescription: "Un ecosistema completo desarrollado con Next.js 15, Server Actions y Tailwind CSS. Incluye autenticación segura, streaming de respuestas de IA y panel analítico interactivo con métricas detalladas.",
+    id: "nexus-saas",
+    title: "Plataforma Web Corporativa",
+    description: "Sitio web institucional para empresa de tecnología con diseño de alto nivel, animaciones suaves y panel de consultas directo.",
+    longDescription: "Diseñado para maximizar la conversión de clientes corporativos. Incluye catálogo interactivo de soluciones, testimonios y formulario de contacto optimizado.",
     image: "/projects/nexus-ai.webp",
-    tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "OpenAI API", "Prisma"],
-    category: "AI / Innovation",
-    githubUrl: "https://github.com/jeredeldo/nexus-ai",
+    tags: ["Sitio Corporativo", "Next.js", "Tailwind CSS", "Diseño UX/UI"],
+    category: "Full Stack",
+    githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://nexus-ai-demo.vercel.app",
-    featured: true
+    featured: true,
+    clientBadge: "Empresa de Tecnología"
   },
   {
     id: "ecopulse-dashboard",
-    title: "EcoPulse Analytics",
-    description: "Dashboard financiero y de métricas en tiempo real con visualización gráfica interactiva y modo oscuro elegante.",
-    longDescription: "Dashboard para monitoreo de datos con WebSocket para actualización en vivo, gráficos dinámicos y arquitectura modular optimizada para máximo rendimiento.",
+    title: "Portal de Servicios & Analítica",
+    description: "Plataforma interactiva para gestión de clientes en tiempo real con visualización de datos y panel de control personalizado.",
+    longDescription: "Solución a medida para empresa de consultoría financiera. Monitoreo en vivo de métricas y exportación de reportes.",
     image: "/projects/ecopulse.webp",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Node.js"],
+    tags: ["Portal de Clientes", "React", "Node.js", "Dashboard"],
     category: "Full Stack",
-    githubUrl: "https://github.com/jeredeldo/ecopulse-dashboard",
+    githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://ecopulse-demo.vercel.app",
-    featured: true
+    featured: true,
+    clientBadge: "Consultoría Financiera"
   },
   {
     id: "aura-commerce",
-    title: "Aura Commerce Storefront",
-    description: "E-commerce ultra veloz orientado a conversión con pasarela de pagos Stripe y diseño glassmorphism.",
-    longDescription: "Tienda online de alto rendimiento con carrito en tiempo real, búsqueda con filtros rápidos, paginación optimizada y flujo de checkout automatizado.",
+    title: "Tienda Online E-Commerce",
+    description: "E-commerce de productos premium con catálogo interactivo, carrito dinámico y pasarela de pago automatizada.",
+    longDescription: "Tienda virtual diseñada para acelerar las ventas. Carga instantánea, checkout simplificado y adaptable a dispositivos móviles.",
     image: "/projects/aura-commerce.webp",
-    tags: ["Next.js 15", "Tailwind CSS", "Stripe", "Zustand", "Framer Motion"],
+    tags: ["Tienda Online", "Stripe / MercadoPago", "Next.js 15", "UI Premium"],
     category: "Frontend",
-    githubUrl: "https://github.com/jeredeldo/aura-commerce",
+    githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://aura-commerce.vercel.app",
-    featured: true
+    featured: true,
+    clientBadge: "Marca de Moda / Retail"
   },
   {
     id: "flowcraft-api",
-    title: "FlowCraft Workflow Backend",
-    description: "API RESTful escalable para automatización de tareas y gestión de flujos de trabajo en equipos remotos.",
-    longDescription: "Backend construido con Node.js, Express y PostgreSQL. Cuenta con documentación Swagger, pruebas unitarias integradas, autenticación JWT y limitador de peticiones (Rate Limiting).",
+    title: "Landing Page de Alta Conversión",
+    description: "Landing page para lanzamiento de producto digital con flujo de registro automatizado e integración con email marketing.",
+    longDescription: "Optimizada para campanas de publicidad pagada en Meta Ads y Google Ads. Tasa de conversión superior al 18%.",
     image: "/projects/flowcraft.webp",
-    tags: ["Node.js", "Express", "PostgreSQL", "Docker", "Jest"],
-    category: "Backend",
-    githubUrl: "https://github.com/jeredeldo/flowcraft-api",
+    tags: ["Landing Page", "Captación de Leads", "SEO & Speed", "Tailwind"],
+    category: "Frontend",
+    githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://flowcraft-api.vercel.app",
-    featured: true
+    featured: true,
+    clientBadge: "Lanzamiento Digital"
   }
 ];
 

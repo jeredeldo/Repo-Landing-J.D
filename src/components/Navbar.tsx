@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Code2, ArrowUpRight } from 'lucide-react';
+import { Menu, X, Globe, ArrowRight } from 'lucide-react';
 import { personalData } from '@/data/portfolioData';
 
 const navLinks = [
   { name: 'Inicio', href: '#hero' },
+  { name: 'Servicios', href: '#services' },
+  { name: 'Trabajos', href: '#projects' },
   { name: 'Sobre mí', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Proyectos', href: '#projects' },
   { name: 'Contacto', href: '#contact' },
 ];
 
@@ -45,7 +45,7 @@ export function Navbar() {
             className="flex items-center gap-2.5 group focus:outline-none"
           >
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-              <Code2 className="w-5 h-5" />
+              <Globe className="w-5 h-5" />
             </div>
             <span className="font-bold text-lg tracking-tight text-white flex items-center">
               Jeremías
@@ -69,13 +69,11 @@ export function Navbar() {
           {/* Botones de acción derecha */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href={personalData.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/20 hover:shadow-blue-600/35 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>LinkedIn</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <span>Pedir Presupuesto</span>
+              <ArrowRight className="w-4 h-4" />
             </a>
           </div>
 
@@ -114,13 +112,11 @@ export function Navbar() {
               ))}
               <div className="pt-2 border-t border-slate-800/60 mt-2 flex flex-col gap-2">
                 <a
-                  href={personalData.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   onClick={() => setIsOpen(false)}
                   className="w-full text-center py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium text-sm shadow-md"
                 >
-                  Ver LinkedIn
+                  Pedir Presupuesto
                 </a>
               </div>
             </div>
