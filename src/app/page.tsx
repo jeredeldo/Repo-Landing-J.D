@@ -6,10 +6,11 @@ import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-slate-950 text-slate-100 overflow-hidden bg-grid-pattern">
+    <main className="relative min-h-screen bg-black text-white overflow-hidden bg-grid-pattern">
       <Navbar />
       <Hero />
       <Services />
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

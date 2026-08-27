@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDown, Sparkles, FolderGit2, Globe, ShieldCheck, Zap, Smartphone, ArrowRight, Star } from 'lucide-react';
-import { personalData, brandData } from '@/data/portfolioData';
+import { brandData } from '@/data/portfolioData';
 import { AlbionLogo } from './AlbionLogo';
 
 export function Hero() {
@@ -70,16 +70,6 @@ export function Hero() {
               <Sparkles className="w-5 h-5 text-white" />
               <span>{brandData.tagline}</span>
             </motion.h2>
-
-            {/* Frase de Autoría y Fundador */}
-            <motion.div
-              variants={itemVariants}
-              className="mt-2 text-xs font-mono text-zinc-400 uppercase tracking-widest flex items-center gap-2"
-            >
-              <span>Por {brandData.founder}</span>
-              <span className="text-zinc-600">•</span>
-              <span className="text-zinc-300">Desarrollador Web</span>
-            </motion.div>
 
             {/* Descripción Comercial */}
             <motion.p

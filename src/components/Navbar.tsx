@@ -33,16 +33,16 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'glass-nav py-3.5 shadow-2xl'
-          : 'bg-transparent py-6'
+          ? 'glass-nav py-3 shadow-2xl'
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo ALBION WEB */}
+          {/* Logo ALBION WEB Más Grande */}
           <a href="#hero" className="focus:outline-none">
-            <AlbionLogo className="w-8 h-8" showText={true} />
+            <AlbionLogo className="w-12 h-12 sm:w-14 sm:h-14" showText={true} />
           </a>
 
           {/* Links Desktop */}
