@@ -6,7 +6,7 @@ import { FolderGit2, Code } from 'lucide-react';
 import { projectsData, personalData } from '@/data/portfolioData';
 import { ProjectCard } from './ProjectCard';
 
-const categories = ['Todos', 'Full Stack', 'Frontend', 'Backend', 'AI / Innovation'];
+const categories = ['Todos', 'Full Stack', 'Frontend', 'Backend'];
 
 export function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -17,24 +17,23 @@ export function Projects() {
       : projectsData.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
-      {/* Luz ambiental */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-600/10 blur-[130px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-violet-600/10 blur-[130px] rounded-full pointer-events-none -z-10" />
+    <section id="projects" className="py-24 relative overflow-hidden bg-black border-t border-zinc-900">
+      {/* Resplandor ambiental */}
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-white/5 blur-[140px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-semibold uppercase tracking-wider">
-            <FolderGit2 className="w-3.5 h-3.5" />
-            <span>Portafolio</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono uppercase tracking-widest">
+            <FolderGit2 className="w-3.5 h-3.5 text-white" />
+            <span>Portafolio ALBION WEB</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Proyectos <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Destacados</span>
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+            Trabajos <span className="bg-gradient-to-r from-white via-zinc-300 to-zinc-500 bg-clip-text text-transparent">Destacados</span>
           </h2>
-          <p className="mt-3 text-slate-400 max-w-xl text-base">
-            Una selección de aplicaciones web que representan mi enfoque en código limpio, experiencia de usuario e innovación tecnológica.
+          <p className="mt-3 text-zinc-400 max-w-xl text-base">
+            Una muestra de soluciones web construidas con rigor técnico, estética monocromática y rendimiento superior.
           </p>
 
           {/* Filtro de Categorías */}
@@ -43,10 +42,10 @@ export function Projects() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
+                className={`px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider transition-all ${
                   selectedCategory === cat
-                    ? 'bg-gradient-to-r from-blue-600 to-violet-600 text-white shadow-md'
-                    : 'glass-card text-slate-400 hover:text-white hover:border-slate-700'
+                    ? 'bg-white text-black shadow-md'
+                    : 'glass-card text-zinc-400 hover:text-white border-zinc-800'
                 }`}
               >
                 {cat}
@@ -70,9 +69,9 @@ export function Projects() {
             href={personalData.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl glass-card text-slate-300 hover:text-white hover:border-blue-500/40 text-sm font-semibold transition-all group shadow-md"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl glass-card text-zinc-300 hover:text-white border-white/10 text-xs font-extrabold uppercase tracking-wider transition-all group shadow-md"
           >
-            <Code className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" />
+            <Code className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
             <span>Ver más repositorios en GitHub</span>
           </a>
         </div>

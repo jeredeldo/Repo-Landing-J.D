@@ -36,20 +36,20 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative bg-slate-950/80 border-t border-slate-800/40">
+    <section id="contact" className="py-24 relative bg-black border-t border-zinc-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/50 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
-            <MessageSquare className="w-3.5 h-3.5" />
-            <span>Presupuesto & Consultas</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono uppercase tracking-widest">
+            <MessageSquare className="w-3.5 h-3.5 text-white" />
+            <span>Presupuestos & Proyectos</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            ¿Querés hacer o renovar tu sitio web? <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Solicitá una propuesta</span>
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+            Iniciá tu proyecto con <span className="bg-gradient-to-r from-white via-zinc-300 to-zinc-500 bg-clip-text text-transparent">ALBION WEB</span>
           </h2>
-          <p className="mt-3 text-slate-400 max-w-xl text-base sm:text-lg">
-            Enviame tu consulta sin compromiso. Te responderé a la brevedad con la mejor solución para tu proyecto.
+          <p className="mt-3 text-zinc-400 max-w-xl text-base sm:text-lg">
+            Solicitá tu presupuesto o asesoramiento técnico. Te responderemos en menos de 24 horas laborables.
           </p>
         </div>
 
@@ -63,21 +63,21 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="glass-card p-8 rounded-3xl border border-slate-800/80 space-y-6">
-              <h3 className="text-xl font-bold text-white">Canales Directos</h3>
+            <div className="glass-card p-8 rounded-3xl border border-white/10 space-y-6">
+              <h3 className="text-xl font-bold text-white uppercase tracking-wider">Contacto Directo</h3>
               
               <div className="space-y-4">
                 {/* Email Directo */}
                 <a
                   href={`mailto:${personalData.email}`}
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-white/40 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-600/20 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-400 block font-medium">Email Profesional</span>
-                    <span className="text-sm font-semibold text-slate-200 group-hover:text-indigo-400 transition-colors">
+                    <span className="text-[11px] text-zinc-400 block font-mono uppercase tracking-wider">Email Oficial</span>
+                    <span className="text-sm font-bold text-zinc-200 group-hover:text-white transition-colors">
                       {personalData.email}
                     </span>
                   </div>
@@ -88,18 +88,18 @@ export function Contact() {
                   href={personalData.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-white/40 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                     <LinkedinIcon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-400 block font-medium">LinkedIn Perfil</span>
-                    <span className="text-sm font-semibold text-slate-200 group-hover:text-blue-400 transition-colors">
+                    <span className="text-[11px] text-zinc-400 block font-mono uppercase tracking-wider">LinkedIn</span>
+                    <span className="text-sm font-bold text-zinc-200 group-hover:text-white transition-colors">
                       Jeremías Del Do
                     </span>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-blue-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
 
                 {/* GitHub */}
@@ -107,42 +107,42 @@ export function Contact() {
                   href={personalData.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 hover:bg-blue-950/20 transition-all group"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-white/40 transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-200 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                     <GithubIcon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-400 block font-medium">GitHub Repositorios</span>
-                    <span className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors">
+                    <span className="text-[11px] text-zinc-400 block font-mono uppercase tracking-wider">GitHub</span>
+                    <span className="text-sm font-bold text-zinc-200 group-hover:text-white transition-colors">
                       @jeredeldo
                     </span>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
 
                 {/* Ubicación */}
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-600/20 flex items-center justify-center text-emerald-400">
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800">
+                  <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-400 block font-medium">Modalidad</span>
-                    <span className="text-sm font-semibold text-slate-200">
-                      {personalData.location} (Remoto / Presencial)
+                    <span className="text-[11px] text-zinc-400 block font-mono uppercase tracking-wider">Modalidad</span>
+                    <span className="text-sm font-bold text-zinc-200">
+                      {personalData.location}
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800/80 flex items-center gap-2 text-xs text-slate-400">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Respuesta en menos de 24 horas laborables.</span>
+              <div className="pt-4 border-t border-zinc-800 flex items-center gap-2 text-xs text-zinc-400">
+                <ShieldCheck className="w-4 h-4 text-white shrink-0" />
+                <span>Garantía de confidencialidad y presupuesto personalizado.</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Formulario de Solicitud de Presupuesto */}
+          {/* Formulario de Solicitud de Presupuesto ALBION WEB */}
           <motion.div
             className="lg:col-span-7"
             initial={{ opacity: 0, x: 30 }}
@@ -150,22 +150,22 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="glass-card p-8 rounded-3xl border border-slate-800/80">
-              <h3 className="text-xl font-bold text-white mb-6">Pedir Presupuesto</h3>
+            <div className="glass-card p-8 rounded-3xl border border-white/10">
+              <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-wider">Pedir Presupuesto</h3>
 
               {submitted ? (
-                <div className="p-6 rounded-2xl bg-emerald-950/60 border border-emerald-800/80 text-center space-y-3">
-                  <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto animate-bounce" />
-                  <h4 className="text-lg font-bold text-white">¡Consulta recibida!</h4>
-                  <p className="text-sm text-slate-300">
-                    Gracias por tu interés. Te escribiré a <span className="font-semibold">{formData.email || 'tu email'}</span> para evaluar tu proyecto.
+                <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-700 text-center space-y-3">
+                  <CheckCircle2 className="w-12 h-12 text-white mx-auto animate-bounce" />
+                  <h4 className="text-lg font-bold text-white uppercase tracking-wider">¡Solicitud Enviada!</h4>
+                  <p className="text-sm text-zinc-300">
+                    Gracias por comunicarte con ALBION WEB. Nos pondremos en contacto a la brevedad a <span className="font-bold text-white">{formData.email || 'tu email'}</span>.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">
                         Nombre / Empresa
                       </label>
                       <input
@@ -173,45 +173,45 @@ export function Contact() {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Ej: Martín Rodríguez"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all"
+                        placeholder="Ej: Empresa / Marca"
+                        className="w-full px-4 py-3 rounded-xl bg-black border border-zinc-800 text-white placeholder-zinc-600 focus:outline-none focus:border-white text-sm transition-all"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1.5">
-                        Email de Contacto
+                      <label className="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">
+                        Email Corporativo
                       </label>
                       <input
                         type="email"
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="ejemplo@empresa.com"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all"
+                        placeholder="contacto@empresa.com"
+                        className="w-full px-4 py-3 rounded-xl bg-black border border-zinc-800 text-white placeholder-zinc-600 focus:outline-none focus:border-white text-sm transition-all"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
-                      Tipo de Servicio Web
+                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">
+                      Servicio Requerido
                     </label>
                     <select
                       value={formData.projectType}
                       onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 focus:outline-none focus:border-blue-500 text-sm transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-black border border-zinc-800 text-white focus:outline-none focus:border-white text-sm transition-all"
                     >
                       <option value="Sitio Web Corporativo">Sitio Web Corporativo / Institucional</option>
                       <option value="Landing Page">Landing Page de Alta Conversión</option>
                       <option value="Tienda Online">Tienda Online / E-Commerce</option>
-                      <option value="Rediseño / Optimización">Rediseño o Aceleración Web</option>
-                      <option value="Otro">Otro proyecto personalizado</option>
+                      <option value="Rediseño / Optimización">Rediseño & Optimización PageSpeed</option>
+                      <option value="Otro">Proyecto Personalizado</option>
                     </select>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">
                       Detalles del Proyecto
                     </label>
                     <textarea
@@ -219,22 +219,22 @@ export function Contact() {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Contame brevemente sobre tu negocio y qué te gustaría lograr con la página web..."
-                      className="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all resize-none"
+                      placeholder="Describí brevemente los objetivos de tu sitio web..."
+                      className="w-full px-4 py-3 rounded-xl bg-black border border-zinc-800 text-white placeholder-zinc-600 focus:outline-none focus:border-white text-sm transition-all resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50"
+                    className="w-full py-4 rounded-xl bg-white hover:bg-zinc-200 text-black font-extrabold text-xs uppercase tracking-wider transition-all shadow-xl flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50"
                   >
                     {loading ? (
-                      <span>Enviando propuesta...</span>
+                      <span>Enviando solicitud...</span>
                     ) : (
                       <>
                         <Send className="w-4 h-4" />
-                        <span>Enviar Solicitud de Presupuesto</span>
+                        <span>Solicitar Presupuesto ALBION WEB</span>
                       </>
                     )}
                   </button>

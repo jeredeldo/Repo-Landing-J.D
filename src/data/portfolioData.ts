@@ -1,20 +1,28 @@
 import { PersonalInfo, Service, SkillCategory, Project, Stat, SocialLink } from '@/types/portfolio';
 
+export const brandData = {
+  name: "ALBION WEB",
+  tagline: "Desarrollo & Diseño Web de Alto Impacto",
+  description: "Creamos experiencias digitales minimalistas, ultra rápidas y enfocadas en acelerar el crecimiento de tu marca.",
+  founder: "Jeremías Del Do",
+  founderRole: "Fundador & Lead Web Developer",
+};
+
 export const personalData: PersonalInfo = {
   name: "Jeremías Del Do",
-  role: "Desarrollador & Diseñador Web Freelance",
-  shortBio: "Diseño y desarrollo sitios web profesionales, rápidos y atractivos pensados para hacer crecer tu marca y captar más clientes.",
+  role: "Fundador & Lead Web Developer en ALBION WEB",
+  shortBio: "Lidero ALBION WEB, creando sitios web minimalistas, ultra rápidos y con estándares internacionales de diseño para empresas y marcas exigentes.",
   fullBio: [
-    "Hola, soy Jeremías. Me dedico a crear páginas web de alto nivel para empresas, profesionales independientes y proyectos que buscan transmitir confianza y autoridad.",
-    "Mi objetivo es convertir la presencia digital de mis clientes en su mejor herramienta de ventas: sitios web modernos, rápidos en celulares y computadoras, con diseño impecable y fácil navegación.",
-    "Acompaño cada proyecto desde la idea inicial hasta el lanzamiento, asegurando comunicación fluida, entregas en tiempo y forma, y un resultado final del que te sientas orgulloso."
+    "Bienvenido a ALBION WEB. Somos un estudio independiente dedicado al diseño y desarrollo de proyectos digitales de alto impacto para negocios, marcas y profesionales.",
+    "Bajo la dirección de Jeremías Del Do, nos especializamos en transformar la presencia digital de nuestros clientes combinando una estética monocromática minimalista, ingeniería de software moderna (Next.js, TypeScript, React) y optimización SEO orientada a conversiones.",
+    "Acompañamos cada proyecto desde la conceptualización estratégica hasta la publicación final, garantizando plazos de entrega rigurosos, atención personalizada y un resultado final sofisticado y duradero."
   ],
-  location: "Argentina",
+  location: "Argentina (Disponible para Clientes Globales)",
   email: "jeremias.deldo@gmail.com",
   linkedin: "https://www.linkedin.com/in/jerem%C3%ADas-del-do-92277a38a/",
   github: "https://github.com/jeredeldo",
   availableForWork: true,
-  avatarUrl: "/avatar-placeholder.png",
+  avatarUrl: "/albion-logo.jpg",
   resumeUrl: "#"
 };
 
@@ -22,131 +30,150 @@ export const servicesData: Service[] = [
   {
     id: "landing-pages",
     title: "Landing Pages de Alta Conversión",
-    description: "Páginas clave diseñadas para promocionar un servicio o producto específico, captar clientes potenciales y maximizar el retorno de tu publicidad.",
+    description: "Páginas exclusivas diseñadas para destacar tu producto o servicio, captar clientes calificados y potenciar tus campañas de publicidad.",
     iconName: "Rocket",
-    features: ["Diseño exclusivo enfocado en ventas", "Carga ultra rápida en móviles", "Integración con WhatsApp y formularios", "Optimizadas para Google Ads y redes"],
+    features: [
+      "Diseño minimalista premium de alta gama",
+      "Carga instantánea (< 1 segundo)",
+      "Integración directa con WhatsApp y formularios",
+      "Optimización para Google Ads & Meta Ads"
+    ],
     popular: true
   },
   {
     id: "sitios-corporativos",
     title: "Sitios Web Corporativos",
-    description: "La carta de presentación digital ideal para tu empresa o consultoría. Transmití profesionalismo, confianza y autoridad ante tus clientes.",
+    description: "La plataforma digital definitiva para tu empresa. Transmití solidez, autoridad y elegancia ante tus clientes e inversores.",
     iconName: "Building2",
-    features: ["Secciones de servicios e historia", "Diseño responsive (adaptable a todo dispositivo)", "Posicionamiento SEO inicial", "Dominio y correo profesional"],
+    features: [
+      "Estructura institucional completa",
+      "Diseño 100% adaptable a celulares y pantallas 4K",
+      "Posicionamiento SEO estratégico inicial",
+      "Dominio, servidor seguro y correos corporativos"
+    ]
   },
   {
     id: "e-commerce",
     title: "Tiendas Online (E-Commerce)",
-    description: "Vendé tus productos las 24 horas del día con una tienda virtual rápida, segura y fácil de administrar.",
+    description: "Plataformas virtuales de venta 24/7 diseñadas para ofrecer una experiencia de compra fluida, rápida y segura.",
     iconName: "ShoppingBag",
-    features: ["Catálogo dinámico de productos", "Pasarela de pagos (MercadoPago / Stripe)", "Carrito de compras en tiempo real", "Panel de gestión de stock sencillo"],
+    features: [
+      "Catálogo interactivo de productos",
+      "Integración con MercadoPago, Stripe y tarjetas",
+      "Carrito de compras sin interrupciones",
+      "Panel de administración intuitivo"
+    ]
   },
   {
     id: "optimizacion-seo",
-    title: "Rediseño & Optimización Web",
-    description: "Transformá un sitio antiguo o lento en una experiencia moderna, rápida y adaptable que destaque frente a tu competencia.",
+    title: "Rediseño & Optimización de Elite",
+    description: "Modernizamos tu plataforma actual reemplazando tecnologías obsoletas por código moderno, veloz y de bajo mantenimiento.",
     iconName: "Zap",
-    features: ["Aceleración de tiempo de carga", "Rediseño visual moderno y limpio", "Corrección de errores y usabilidad", "Adaptación 100% móvil"],
+    features: [
+      "Rediseño bajo la identidad ALBION WEB",
+      "Aceleración de rendimiento Google PageSpeed 95+",
+      "Auditoría de usabilidad y conversión UX/UI",
+      "Mantenimiento técnico y soporte garantizado"
+    ]
   }
 ];
 
 export const statsData: Stat[] = [
   {
-    label: "Satisfacción",
+    label: "Garantía de Calidad",
     value: "100%",
-    description: "Clientes satisfechos con el resultado"
+    description: "Satisfacción total en cada entrega"
   },
   {
-    label: "Entregas a Tiempo",
+    label: "Cumplimiento",
     value: "Puntual",
-    description: "Compromiso estricto con plazos"
+    description: "Fechas de lanzamiento estrictas"
   },
   {
-    label: "Velocidad de Carga",
-    value: "< 1 seg",
-    description: "Páginas optimizadas al máximo"
+    label: "Rendimiento",
+    value: "99/100",
+    description: "Puntuación en Google PageSpeed"
   },
   {
-    label: "Soporte Continuo",
+    label: "Soporte ALBION",
     value: "24/7",
-    description: "Acompañamiento post-lanzamiento"
+    description: "Acompañamiento continuo post-lanzamiento"
   }
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
     id: "design-dev",
-    name: "Diseño & Desarrollo Web",
+    name: "Estándares de Desarrollo & Diseño",
     skills: [
-      { name: "React / Next.js", iconName: "Zap", level: "Profesional", featured: true },
-      { name: "HTML5 / CSS3", iconName: "Layout", level: "Profesional", featured: true },
-      { name: "Tailwind CSS", iconName: "Palette", level: "Profesional", featured: true },
-      { name: "TypeScript", iconName: "Code2", level: "Profesional", featured: true },
-      { name: "Diseño UX/UI", iconName: "Figma", level: "Avanzado", featured: true },
-      { name: "Optimización SEO", iconName: "Globe", level: "Avanzado", featured: true },
+      { name: "Next.js 15 & React", iconName: "Zap", level: "Arquitectura", featured: true },
+      { name: "TypeScript", iconName: "Code2", level: "Ingeniería", featured: true },
+      { name: "Tailwind CSS & Monocromo", iconName: "Palette", level: "Diseño UI", featured: true },
+      { name: "Diseño UX/UI Minimalista", iconName: "Figma", level: "Experiencia", featured: true },
+      { name: "SEO & Performance", iconName: "Globe", level: "Posicionamiento", featured: true },
+      { name: "E-Commerce Integrado", iconName: "ShieldCheck", level: "Pagos", featured: true },
     ]
   },
   {
-    id: "integrations",
-    name: "Integraciones & Herramientas",
+    id: "infrastructure",
+    name: "Infraestructura & Plataformas",
     skills: [
-      { name: "WordPress / Headless", iconName: "Layers", level: "Avanzado", featured: true },
-      { name: "Node.js & APIs", iconName: "Server", level: "Avanzado", featured: true },
-      { name: "Bases de Datos", iconName: "Database", level: "Avanzado" },
-      { name: "MercadoPago / Stripe", iconName: "ShieldCheck", level: "Avanzado", featured: true },
-      { name: "Vercel / Hosting", iconName: "Cloud", level: "Profesional", featured: true },
-      { name: "Git & Control de Versiones", iconName: "GitBranch", level: "Profesional" }
+      { name: "Vercel / Cloud Edge", iconName: "Cloud", level: "Despliegue", featured: true },
+      { name: "Node.js & REST APIs", iconName: "Server", level: "Backend", featured: true },
+      { name: "MercadoPago & Stripe API", iconName: "ShieldCheck", level: "Pasarelas", featured: true },
+      { name: "Headless CMS & Databases", iconName: "Database", level: "Contenidos" },
+      { name: "Git & Control de Código", iconName: "GitBranch", level: "Versiones" }
     ]
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    id: "nexus-saas",
+    id: "albion-corporate",
     title: "Plataforma Web Corporativa",
-    description: "Sitio web institucional para empresa de tecnología con diseño de alto nivel, animaciones suaves y panel de consultas directo.",
-    longDescription: "Diseñado para maximizar la conversión de clientes corporativos. Incluye catálogo interactivo de soluciones, testimonios y formulario de contacto optimizado.",
+    description: "Desarrollo web institucional de alta gama para empresa de tecnología y negocios globales. Estética minimalista monocromática y carga instantánea.",
+    longDescription: "Diseñado para posicionar la marca con autoridad. Incluye catálogo interactivo, módulo de servicios y captación de clientes de alto valor.",
     image: "/projects/nexus-ai.webp",
-    tags: ["Sitio Corporativo", "Next.js", "Tailwind CSS", "Diseño UX/UI"],
+    tags: ["Corporativo", "ALBION WEB", "Next.js 15", "Minimalista"],
     category: "Full Stack",
     githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://nexus-ai-demo.vercel.app",
     featured: true,
-    clientBadge: "Empresa de Tecnología"
+    clientBadge: "Cliente Corporativo"
   },
   {
-    id: "ecopulse-dashboard",
-    title: "Portal de Servicios & Analítica",
-    description: "Plataforma interactiva para gestión de clientes en tiempo real con visualización de datos y panel de control personalizado.",
-    longDescription: "Solución a medida para empresa de consultoría financiera. Monitoreo en vivo de métricas y exportación de reportes.",
+    id: "albion-portal",
+    title: "Portal de Consultoría & Analítica",
+    description: "Sitio web y plataforma interactiva para firma de consultoría financiera con panel de clientes en vivo.",
+    longDescription: "Solución a medida para visualización de informes y gestión de servicios. Interfaz sobria en blanco y negro.",
     image: "/projects/ecopulse.webp",
-    tags: ["Portal de Clientes", "React", "Node.js", "Dashboard"],
+    tags: ["Portal Web", "Consultoría", "React", "UI Monocromática"],
     category: "Full Stack",
     githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://ecopulse-demo.vercel.app",
     featured: true,
-    clientBadge: "Consultoría Financiera"
+    clientBadge: "Firma Financiera"
   },
   {
-    id: "aura-commerce",
-    title: "Tienda Online E-Commerce",
-    description: "E-commerce de productos premium con catálogo interactivo, carrito dinámico y pasarela de pago automatizada.",
-    longDescription: "Tienda virtual diseñada para acelerar las ventas. Carga instantánea, checkout simplificado y adaptable a dispositivos móviles.",
+    id: "albion-store",
+    title: "Tienda Online E-Commerce Premium",
+    description: "E-Commerce de lujo para marca de diseño. Catálogo interactivo, pasarela de pago instantánea y experiencia fluida en móviles.",
+    longDescription: "Tienda virtual optimizada para ventas internacionales. Proceso de pago simplificado y catálogo visual de alto rendimiento.",
     image: "/projects/aura-commerce.webp",
-    tags: ["Tienda Online", "Stripe / MercadoPago", "Next.js 15", "UI Premium"],
+    tags: ["E-Commerce", "Stripe / MercadoPago", "Minimalista", "Next.js"],
     category: "Frontend",
     githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://aura-commerce.vercel.app",
     featured: true,
-    clientBadge: "Marca de Moda / Retail"
+    clientBadge: "Marca de Lujo"
   },
   {
-    id: "flowcraft-api",
+    id: "albion-landing",
     title: "Landing Page de Alta Conversión",
-    description: "Landing page para lanzamiento de producto digital con flujo de registro automatizado e integración con email marketing.",
-    longDescription: "Optimizada para campanas de publicidad pagada en Meta Ads y Google Ads. Tasa de conversión superior al 18%.",
+    description: "Landing page de captación para lanzamiento digital con flujo de reservas automatizado y métricas en tiempo real.",
+    longDescription: "Optimizada para campañas publicitarias de alto presupuesto. Tasa de conversión de leads maximizada.",
     image: "/projects/flowcraft.webp",
-    tags: ["Landing Page", "Captación de Leads", "SEO & Speed", "Tailwind"],
+    tags: ["Landing Page", "Leads", "SEO Edge", "High Performance"],
     category: "Frontend",
     githubUrl: "https://github.com/jeredeldo",
     demoUrl: "https://flowcraft-api.vercel.app",

@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe, ArrowRight } from 'lucide-react';
-import { personalData } from '@/data/portfolioData';
+import { Menu, X, ArrowRight } from 'lucide-react';
+import { AlbionLogo } from './AlbionLogo';
 
 const navLinks = [
   { name: 'Inicio', href: '#hero' },
@@ -33,47 +33,39 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'glass-nav py-3.5 shadow-lg shadow-black/20'
-          : 'bg-transparent py-5'
+          ? 'glass-nav py-3.5 shadow-2xl'
+          : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo / Nombre */}
-          <a
-            href="#hero"
-            className="flex items-center gap-2.5 group focus:outline-none"
-          >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-              <Globe className="w-5 h-5" />
-            </div>
-            <span className="font-bold text-lg tracking-tight text-white flex items-center">
-              Jeremías
-              <span className="text-blue-400 ml-1">.dev</span>
-            </span>
+          
+          {/* Logo ALBION WEB */}
+          <a href="#hero" className="focus:outline-none">
+            <AlbionLogo className="w-8 h-8" showText={true} />
           </a>
 
           {/* Links Desktop */}
-          <nav className="hidden md:flex items-center gap-1 rounded-full bg-slate-900/80 border border-slate-800/80 px-4 py-1.5 backdrop-blur-md shadow-sm">
+          <nav className="hidden md:flex items-center gap-1 rounded-full bg-black/80 border border-white/10 px-5 py-2 backdrop-blur-md shadow-inner">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3.5 py-1.5 text-sm font-medium text-slate-400 hover:text-white rounded-full transition-colors relative hover:bg-slate-800/50"
+                className="px-4 py-1.5 text-xs font-semibold tracking-wider text-zinc-400 hover:text-white uppercase transition-colors relative hover:bg-white/5 rounded-full"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Botones de acción derecha */}
+          {/* Botón CTA derecho */}
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contact"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/20 hover:shadow-blue-600/35 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-zinc-200 text-black font-bold text-xs uppercase tracking-wider transition-all shadow-lg hover:shadow-white/20 hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Pedir Presupuesto</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
 
@@ -81,7 +73,7 @@ export function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-colors"
+              className="p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white transition-colors"
               aria-label="Abrir menú"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -97,7 +89,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-nav border-b border-slate-800 px-4 pt-3 pb-6 mt-3 shadow-lg"
+            className="md:hidden glass-nav border-b border-white/10 px-4 pt-3 pb-6 mt-3 shadow-2xl"
           >
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
@@ -105,16 +97,16 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2.5 text-base font-medium text-slate-300 hover:text-blue-400 hover:bg-slate-800/40 rounded-lg transition-colors"
+                  className="px-4 py-3 text-sm font-semibold tracking-widest text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors uppercase"
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="pt-2 border-t border-slate-800/60 mt-2 flex flex-col gap-2">
+              <div className="pt-3 border-t border-zinc-800 mt-2 flex flex-col gap-2">
                 <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  className="w-full text-center py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium text-sm shadow-md"
+                  className="w-full text-center py-3 rounded-xl bg-white text-black font-bold text-xs uppercase tracking-wider shadow-md"
                 >
                   Pedir Presupuesto
                 </a>
