@@ -9,50 +9,65 @@
   }
   
   ::selection {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(245, 197, 99, 0.3);
     color: #ffffff;
   }
 }
 
-/* Fondo Negro Profundo y Patrón de Cuadrícula Sutil */
+/* Fondo Negro Profundo & Patrón de Cuadrícula con Toques Dorados */
 body {
   background-color: #000000;
   color: #ffffff;
 }
 
+/* Gradiente Textual Dorado Lujoso */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF1C5 0%, #F5C563 45%, #D49E2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FAD67B 0%, #E5B348 50%, #C49126 100%);
+}
+
+.bg-gold-gradient:hover {
+  background: linear-gradient(135deg, #FFE292 0%, #F0BF54 50%, #D8A232 100%);
+}
+
 .bg-radial-gradient {
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 70%);
+  background: radial-gradient(circle at 50% 0%, rgba(245, 197, 99, 0.14) 0%, rgba(245, 197, 99, 0.03) 45%, transparent 70%);
 }
 
 .bg-grid-pattern {
   background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-/* Tarjetas Glassmorphism Monocromáticas ALBION WEB */
+/* Tarjetas Glassmorphism Monocromáticas con Bordes Dorados en Hover */
 .glass-card {
   background: rgba(12, 12, 14, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.8);
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 15px 45px -10px rgba(255, 255, 255, 0.08);
+  border-color: rgba(245, 197, 99, 0.35);
+  box-shadow: 0 15px 45px -10px rgba(245, 197, 99, 0.12);
 }
 
 .glass-nav {
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Animaciones de Brillo Blanco/Plata */
+/* Animaciones de Resplandor Dorado */
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -68,11 +83,11 @@ body {
 
 @keyframes pulseGlow {
   0%, 100% {
-    opacity: 0.3;
+    opacity: 0.35;
     transform: scale(1);
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.75;
     transform: scale(1.05);
   }
 }

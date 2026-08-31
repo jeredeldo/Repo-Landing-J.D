@@ -28,8 +28,8 @@ export function Hero() {
 
   return (
     <section id="hero" className="relative pt-36 pb-24 md:pt-44 md:pb-36 overflow-hidden bg-black">
-      {/* Resplandor blanco/plata monocromático */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-gradient-to-tr from-white/10 to-zinc-400/5 blur-[140px] rounded-full pointer-events-none -z-10 animate-pulse-glow" />
+      {/* Resplandor Champán / Dorado de lujo */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[450px] bg-gradient-to-tr from-amber-500/15 via-yellow-500/5 to-transparent blur-[140px] rounded-full pointer-events-none -z-10 animate-pulse-glow" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -41,24 +41,24 @@ export function Hero() {
             initial="hidden"
             animate="visible"
           >
-            {/* Badge de disponibilidad */}
+            {/* Badge de disponibilidad con borde dorado */}
             <motion.div variants={itemVariants} className="inline-flex items-center">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-zinc-300 text-xs font-mono uppercase tracking-widest shadow-sm">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/90 border border-amber-500/30 text-amber-300 text-xs font-mono uppercase tracking-widest shadow-lg shadow-amber-500/5">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
                 </span>
-                ALBION WEB — Estudio Digital
+                ALBION WEB — Estudio Digital de Elite
               </span>
             </motion.div>
 
-            {/* Título Principal ALBION WEB */}
+            {/* Título Principal ALBION WEB con resplandor dorado */}
             <motion.h1
               variants={itemVariants}
               className="mt-6 text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.08]"
             >
               ALBION{' '}
-              <span className="bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
+              <span className="text-gold-gradient">
                 WEB
               </span>
             </motion.h1>
@@ -67,7 +67,7 @@ export function Hero() {
               variants={itemVariants}
               className="mt-3 text-lg sm:text-2xl font-semibold text-zinc-300 tracking-wide flex items-center gap-2"
             >
-              <Sparkles className="w-5 h-5 text-white" />
+              <Sparkles className="w-5 h-5 text-amber-400" />
               <span>{brandData.tagline}</span>
             </motion.h2>
 
@@ -79,14 +79,14 @@ export function Hero() {
               {brandData.description} Diseñamos e implementamos plataformas web minimalistas, ultra rápidas y personalizadas para marcas, empresas y profesionales exigentes.
             </motion.p>
 
-            {/* Botones de acción (CTAs) */}
+            {/* Botones de acción (CTAs Dorados) */}
             <motion.div
               variants={itemVariants}
               className="mt-8 flex flex-wrap items-center gap-4 w-full sm:w-auto"
             >
               <a
                 href="#contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white hover:bg-zinc-200 text-black font-extrabold text-xs uppercase tracking-wider transition-all shadow-xl hover:shadow-white/20 hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gold-gradient text-black font-black text-xs uppercase tracking-wider transition-all shadow-xl shadow-amber-500/20 hover:shadow-amber-500/40 hover:scale-105 active:scale-95"
               >
                 <span>Solicitar Presupuesto</span>
                 <ArrowRight className="w-4 h-4" />
@@ -94,9 +94,9 @@ export function Hero() {
 
               <a
                 href="#projects"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl glass-card text-zinc-200 font-bold text-xs uppercase tracking-wider hover:text-white hover:border-white/40 transition-all hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl glass-card text-zinc-200 font-bold text-xs uppercase tracking-wider hover:text-amber-300 hover:border-amber-500/40 transition-all hover:-translate-y-0.5"
               >
-                <FolderGit2 className="w-4 h-4 text-white" />
+                <FolderGit2 className="w-4 h-4 text-amber-400" />
                 <span>Explorar Trabajos</span>
               </a>
             </motion.div>
@@ -107,31 +107,31 @@ export function Hero() {
               className="mt-12 pt-6 border-t border-zinc-900 w-full grid grid-cols-3 gap-2 text-xs text-zinc-400 font-mono uppercase tracking-wider"
             >
               <div className="flex items-center gap-2">
-                <Zap className="w-4 h-4 text-white shrink-0" />
+                <Zap className="w-4 h-4 text-amber-400 shrink-0" />
                 <span>PageSpeed 99</span>
               </div>
               <div className="flex items-center gap-2">
-                <Smartphone className="w-4 h-4 text-white shrink-0" />
+                <Smartphone className="w-4 h-4 text-amber-400 shrink-0" />
                 <span>100% Responsive</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-white shrink-0" />
-                <span>Diseño Premium</span>
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>Diseño Gold Standard</span>
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Columna derecha: Tarjeta visual ALBION WEB */}
+          {/* Columna derecha: Tarjeta visual ALBION WEB con destellos dorados */}
           <motion.div
             className="lg:col-span-5 flex justify-center relative"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {/* Glow de tarjeta */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-zinc-500/20 rounded-3xl blur-xl opacity-40 animate-pulse-glow" />
+            {/* Glow de tarjeta en dorado */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/30 via-yellow-500/20 to-amber-700/20 rounded-3xl blur-xl opacity-45 animate-pulse-glow" />
 
-            <div className="relative w-full max-w-md glass-card rounded-2xl p-6 overflow-hidden shadow-2xl border border-white/15">
+            <div className="relative w-full max-w-md glass-card rounded-2xl p-6 overflow-hidden shadow-2xl border border-amber-500/20">
               {/* Header de ventana */}
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-zinc-800">
                 <div className="flex items-center gap-2">
@@ -139,8 +139,8 @@ export function Hero() {
                   <span className="w-3 h-3 rounded-full bg-zinc-800 inline-block" />
                   <span className="w-3 h-3 rounded-full bg-zinc-800 inline-block" />
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-black border border-zinc-800 text-[10px] text-zinc-400 font-mono tracking-widest uppercase">
-                  <Globe className="w-3 h-3 text-white" />
+                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-black border border-amber-500/30 text-[10px] text-amber-300 font-mono tracking-widest uppercase">
+                  <Globe className="w-3 h-3 text-amber-400" />
                   <span>albionweb.com</span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export function Hero() {
                 {/* Header Mockup */}
                 <div className="flex items-center justify-between">
                   <AlbionLogo className="w-6 h-6" showText={false} />
-                  <div className="px-3 py-1 rounded bg-white text-black text-[9px] font-extrabold uppercase tracking-widest">
+                  <div className="px-3 py-1 rounded bg-gold-gradient text-black text-[9px] font-black uppercase tracking-widest">
                     ALBION STUDIO
                   </div>
                 </div>
@@ -163,8 +163,8 @@ export function Hero() {
                 {/* Hero Banner Mockup */}
                 <div className="p-4 rounded-lg bg-zinc-900/80 border border-zinc-800 space-y-2.5">
                   <div className="w-3/4 h-3.5 rounded bg-white" />
-                  <div className="w-1/2 h-2 rounded bg-zinc-500" />
-                  <div className="w-28 h-6 rounded bg-white text-black text-[9px] font-bold flex items-center justify-center tracking-wider uppercase mt-2">
+                  <div className="w-1/2 h-2 rounded bg-amber-400/80" />
+                  <div className="w-28 h-6 rounded bg-gold-gradient text-black text-[9px] font-black flex items-center justify-center tracking-wider uppercase mt-2">
                     Ver Soluciones
                   </div>
                 </div>
@@ -173,19 +173,19 @@ export function Hero() {
                 <div className="grid grid-cols-2 gap-2">
                   <div className="p-3 rounded-lg bg-zinc-900/50 border border-zinc-800/80 space-y-1.5">
                     <div className="text-[10px] font-bold text-white uppercase tracking-wider">E-Commerce</div>
-                    <div className="w-full h-1.5 rounded bg-zinc-600" />
+                    <div className="w-full h-1.5 rounded bg-amber-400/60" />
                   </div>
                   <div className="p-3 rounded-lg bg-zinc-900/50 border border-zinc-800/80 space-y-1.5">
                     <div className="text-[10px] font-bold text-white uppercase tracking-wider">Corporativo</div>
-                    <div className="w-full h-1.5 rounded bg-zinc-600" />
+                    <div className="w-full h-1.5 rounded bg-amber-400/60" />
                   </div>
                 </div>
               </div>
 
               {/* Métricas de rendimiento */}
               <div className="mt-4 pt-4 border-t border-zinc-800 grid grid-cols-2 gap-3 text-xs">
-                <div className="p-3 rounded-xl bg-black border border-zinc-800 flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white text-black flex items-center justify-center font-black text-xs">
+                <div className="p-3 rounded-xl bg-black border border-amber-500/20 flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-gold-gradient text-black flex items-center justify-center font-black text-xs">
                     99
                   </div>
                   <div>
@@ -194,13 +194,13 @@ export function Hero() {
                   </div>
                 </div>
 
-                <div className="p-3 rounded-xl bg-black border border-zinc-800 flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-700 text-white flex items-center justify-center">
-                    <Star className="w-4 h-4 fill-white" />
+                <div className="p-3 rounded-xl bg-black border border-amber-500/20 flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-amber-500/30 text-amber-400 flex items-center justify-center">
+                    <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
                   </div>
                   <div>
-                    <span className="font-bold text-white block text-[11px] uppercase tracking-wider">ALBION Quality</span>
-                    <span className="text-[10px] text-zinc-400">Diseño Monocromo</span>
+                    <span className="font-bold text-white block text-[11px] uppercase tracking-wider">ALBION Gold</span>
+                    <span className="text-[10px] text-amber-300/80">Diseño Elite</span>
                   </div>
                 </div>
               </div>
@@ -214,10 +214,10 @@ export function Hero() {
         <div className="mt-16 flex justify-center">
           <a
             href="#services"
-            className="flex flex-col items-center gap-2 text-xs text-zinc-400 hover:text-white transition-colors group tracking-widest uppercase font-mono"
+            className="flex flex-col items-center gap-2 text-xs text-zinc-400 hover:text-amber-400 transition-colors group tracking-widest uppercase font-mono"
           >
             <span>Conocer Servicios</span>
-            <ArrowDown className="w-4 h-4 animate-bounce group-hover:text-white" />
+            <ArrowDown className="w-4 h-4 animate-bounce group-hover:text-amber-400" />
           </a>
         </div>
       </div>

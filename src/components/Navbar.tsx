@@ -40,7 +40,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo ALBION WEB Más Grande */}
+          {/* Logo ALBION WEB */}
           <a href="#hero" className="focus:outline-none">
             <AlbionLogo className="w-12 h-12 sm:w-14 sm:h-14" showText={true} />
           </a>
@@ -51,18 +51,18 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-1.5 text-xs font-semibold tracking-wider text-zinc-400 hover:text-white uppercase transition-colors relative hover:bg-white/5 rounded-full"
+                className="px-4 py-1.5 text-xs font-semibold tracking-wider text-zinc-400 hover:text-amber-300 uppercase transition-colors relative hover:bg-white/5 rounded-full"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Botón CTA derecho */}
+          {/* Botón CTA Dorado de Lujo */}
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-zinc-200 text-black font-bold text-xs uppercase tracking-wider transition-all shadow-lg hover:shadow-white/20 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gold-gradient text-black font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:scale-105 active:scale-95"
             >
               <span>Pedir Presupuesto</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -97,7 +97,7 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-3 text-sm font-semibold tracking-widest text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors uppercase"
+                  className="px-4 py-3 text-sm font-semibold tracking-widest text-zinc-300 hover:text-amber-300 hover:bg-white/5 rounded-lg transition-colors uppercase"
                 >
                   {link.name}
                 </a>
@@ -106,7 +106,7 @@ export function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  className="w-full text-center py-3 rounded-xl bg-white text-black font-bold text-xs uppercase tracking-wider shadow-md"
+                  className="w-full text-center py-3 rounded-xl bg-gold-gradient text-black font-black text-xs uppercase tracking-wider shadow-md"
                 >
                   Pedir Presupuesto
                 </a>
