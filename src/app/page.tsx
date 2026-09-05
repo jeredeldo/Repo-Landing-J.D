@@ -7,6 +7,7 @@ import { Skills } from '@/components/Skills';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import { HiddenCalculator } from '@/components/HiddenCalculator';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <ScrollToTop />
+      <HiddenCalculator />
     </main>
   );
 }
